@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html class="fontawesome-i2svg-active fontawesome-i2svg-complete">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <!-- HTML Meta Tags -->
+  <title>GroundHog</title>
+  <meta name="description" content="GROUNDHOG: Grounding Large Language Models to Holistic Segmentation">
+  <link rel="icon" href="image_assets/groundhog.png" type="image/x-icon">
+  <link rel="shortcut icon" href="image_assets/groundhog.png" type="image/x-icon">
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://groundhog-mllm.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="GROUNDHOG: Grounding Large Language Models to Holistic Segmentation">
+  <meta property="og:description" content="GROUNDHOG: Grounding Large Language Models to Holistic Segmentation">
+  <meta property="og:image" content="https://groundhog-mllm.github.io/image_assets/preview.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="sled-group.github.io">
+  <meta property="twitter:url" content="https://groundhog-mllm.github.io/">
+  <meta name="twitter:title" content="GROUNDHOG: Grounding Large Language Models to Holistic Segmentation">
+  <meta name="twitter:description" content="GROUNDHOG: Grounding Large Language Models to Holistic Segmentation">
+  <meta name="twitter:image" content="https://groundhog-mllm.github.io/image_assets/preview.png">
+
+    <!-- Google tag (gtag.js) -->
+    <script async="" src="./assets/js"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-9VZKE74FPW');
+    </script>
+
+    <title>GROUNDHOG: Grounding Large Language Models to Holistic Segmentation</title>
+
+    <link href="./assets/css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/bulma.min.css">
+    <link rel="stylesheet" href="./assets/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./assets/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./assets/css/tab_gallery.css">
+    <!-- <link rel="stylesheet" href="./assets/css/fontawesome.all.min.css"> -->
+    <link rel="stylesheet" href="./assets/css/academicons.min.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/juxtapose.css">
+    <link rel="stylesheet" href="./assets/css/image_card_fader.css">
+    <link rel="stylesheet" href="./assets/css/image_card_slider.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Monoton' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Akronim' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Sofia ' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=VT323 ' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display ' rel='stylesheet'>
+
+</head>
+
+
+<body data-new-gr-c-s-check-loaded="14.1098.0" data-gr-ext-installed="">
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column has-text-centered">
+                        <h1 class="title is-1 publication-title">GroundHog <img src="image_assets/groundhog.png" alt="(logo)" class="title-image">: Grounding Large Language Models to Holistic Segmentation</h1>
+                        <div class="column has-text-centered">
+
+                            <div class="is-size-5 publication-authors">
+                                <p>
+                                    <span class="author-block">
+                                <a href="https://sled.eecs.umich.edu/author/yichi-zhang/">Yichi Zhang</a><sup>1</sup>&nbsp</span>
+                                    <span class="author-block">
+                                <a href="http://ziqiaoma.com/">Ziqiao Ma</a><sup>1</sup>&nbsp</span>
+                                    <span class="author-block">
+                                <a href="https://xfgao.github.io/">Xiaofeng Gao</a><sup>2</sup>&nbsp</span>
+                                    <span class="author-block">
+                                <a href="https://www.amazon.science/author/suhaila-shakiah">Suhaila Shakiah</a><sup>2</sup>&nbsp</span>
+                                    <span class="author-block">
+                                <a href="https://www.amazon.science/author/qiaozi-gao">Qiaozi Gao</a><sup>2</sup>&nbsp</span>
+                                    <span class="author-block">
+                                <a href="https://web.eecs.umich.edu/~chaijy/">Joyce Chai</a><sup>1</sup>&nbsp</span>
+                                </p>
+                            </div>
+
+                            <div class="is-size-5 publication-authors">
+                                <p>
+                                    <span class="author-block">
+                            <sup>1</sup>University of Michigan&nbsp</span>
+                                    <span class="author-block">
+                            <sup>2</sup>Amazon Alexa AI&nbsp</span>
+                                </p>
+                                <!-- 
+                                <p id="fn1" style="font-size: medium;">Work done during internship at Amazon Alexa AI.
+                                    <a href="#ref2"></a>
+                                </p>
+                                -->
+                            </div>
+
+                            </br>
+
+                            <div class="publication-links">
+
+                                <span class="link-block">
+                                <a href="#" class="external-link button is-normal is-rounded is-dark">
+                                  <span class="icon">
+                                    <svg class="svg-inline--fa fa-file-pdf fa-w-12" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-pdf" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg="">
+                                      <path fill="currentColor" d="M181.9 256.1c-5-16-4.9-46.9-2-46.9 8.4 0 7.6 36.9 2 46.9zm-1.7 47.2c-7.7 20.2-17.3 43.3-28.4 62.7 18.3-7 39-17.2 62.9-21.9-12.7-9.6-24.9-23.4-34.5-40.8zM86.1 428.1c0 .8 13.2-5.4 34.9-40.2-6.7 6.3-29.1 24.5-34.9 40.2zM248 160h136v328c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V24C0 10.7 10.7 0 24 0h200v136c0 13.2 10.8 24 24 24zm-8 171.8c-20-12.2-33.3-29-42.7-53.8 4.5-18.5 11.6-46.6 6.2-64.2-4.7-29.4-42.4-26.5-47.8-6.8-5 18.3-.4 44.1 8.1 77-11.6 27.6-28.7 64.6-40.8 85.8-.1 0-.1.1-.2.1-27.1 13.9-73.6 44.5-54.5 68 5.6 6.9 16 10 21.5 10 17.9 0 35.7-18 61.1-61.8 25.8-8.5 54.1-19.1 79-23.2 21.7 11.8 47.1 19.5 64 19.5 29.2 0 31.2-32 19.7-43.4-13.9-13.6-54.3-9.7-73.6-7.2zM377 105L279 7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-74.1 255.3c4.1-2.7-2.5-11.9-42.8-9 37.1 15.8 42.8 9 42.8 9z">
+                                      </path>
+                                    </svg>
+                                  </span>
+                                <span>Paper</span>
+                                </a>
+                                </span>
+
+                                <span class="link-block">
+                                <a href="https://arxiv.org/" class="external-link button is-normal is-rounded is-dark">
+                                  <span class="icon">
+                                    <i class="ai ai-arxiv"></i>
+                                  </span>
+                                    <span>ArXiv</span>
+                                </a>
+                                </span>
+
+                                <span class="link-block">
+                                <a href="#bibtex" class="external-link button is-normal is-rounded is-dark">
+                                    <span class="icon">
+                                        <i class="ai ai-obp"></i>
+                                    </span>
+                                    <span>BibTex</span>
+                                </a>
+                                </span>
+
+                                </br>
+
+                                <span class="link-block">
+                                <a href="https://github.com/amazon-science" class="external-link button is-normal is-rounded is-dark">
+                                    <span class="icon">
+                                        <svg class="svg-inline--fa fa-github fa-w-16" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" data-fa-i2svg="">
+                                        <path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+                                        </path>
+                                        </svg>
+                                    </span>
+                                    <span>Code (Coming Soon)</span>
+                                </a>
+                                </span>
+
+                                <span class="link-block">
+                                <a href="https://huggingface.co/spaces/sled-umich/InfEdit" class="external-link button is-normal is-rounded is-dark">
+                                    <span>🤗Demo (Coming Soon)</span>
+                                </a>
+                                </span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="has-text-centered">
+                    <!-- <img src="./image_assets/infedit_gif.gif" width="100%"> -->
+                    <!-- <video id="dollyzoom" autoplay="" controls="" muted="" loop="" playsinline="" height="100%">
+                    <source src="./video_assets/workflow_demo.mp4" type="video/mp4">
+                    </video> -->
+                    <!-- <iframe width="960" height="540" src="https://www.youtube.com/embed/ihDbAUh0LXk?si=ASIzJd_Q2Tq1pwjq" 
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+                </div>
+
+                <div class="column has-text-centered link-container" id="blocks">
+                    <div class="publication-links">
+                        <span class="link-block">
+                            <a href="./index.html#blocks" class="external-link button is-normal" style="width: 33%; background-color: #2780e3; color: aliceblue;">
+                            Home
+                            </a>
+                        </span>
+                        <span class="link-block">
+                            <a href="./gallery.html#blocks" class="external-link button is-normal" style="width: 33%; color: #3273DC;">
+                            Gallery
+                            </a>
+                        </span>
+                        <span class="link-block">
+                            <a href="./data.html#blocks" class="external-link button is-normal" style="width: 33%; color: #3273DC;">
+                            Data
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="hero is-light is-small">
+        <div class="hero-body">
+            <div class="container is-max-desktop has-text-centered">
+                <h2 class="title is-3">Summary and Highlight</h2>
+                <div class="has-text-justified">
+                    <p>
+                        We present <b>GroundHog</b><img src="image_assets/groundhog.png" alt="(logo)" class="inline-image">, a multimodal large language model developed by <u>ground</u>ing large language models to <u>ho</u>listic se<u>g</u>mentation.
+                    </p>
+                    <br>
+                </div>
+                
+                <!-- row 1 -->
+                <div class="columns is-centered">
+                    <div class="column">
+                        <div class="content">
+                            <div class="tab_container">
+                                <div id="juxtapose-embed1" data-startingposition="30%" data-animate="true" class="juxtapose">
+                                    <div class="jx-slider">
+                                        <div class="jx-handle " style="left: 54.53%;">
+                                            <div class="jx-arrow jx-left"></div>
+                                            <div class="jx-control">
+                                                <div class="jx-controller" tabindex="0" role="slider" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <div class="jx-arrow jx-right"></div>
+                                        </div>
+                                        <div class="jx-image jx-left " style="width: 54.53%;">
+                                            <img src="./image_assets/teaser/1-input.png" alt="" data-label="Raw">
+                                        </div>
+                                        <div class="jx-image jx-right " style="width: 45.47%;">
+                                            <img src="./image_assets/teaser/1-output.png" alt="" data-label="Grounded">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="has-text-justified">
+                            <p style="text-align: center;">
+                                Text here.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="content">
+                            <div class="tab_container">
+                                <div id="juxtapose-embed1" data-startingposition="30%" data-animate="true" class="juxtapose">
+                                    <div class="jx-slider">
+                                        <div class="jx-handle " style="left: 54.53%;">
+                                            <div class="jx-arrow jx-left"></div>
+                                            <div class="jx-control">
+                                                <div class="jx-controller" tabindex="0" role="slider" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <div class="jx-arrow jx-right"></div>
+                                        </div>
+                                        <div class="jx-image jx-left " style="width: 54.53%;">
+                                            <img src="./image_assets/teaser/1-input.png" alt="" data-label="Raw">
+                                        </div>
+                                        <div class="jx-image jx-right " style="width: 45.47%;">
+                                            <img src="./image_assets/teaser/1-output.png" alt="" data-label="Grounded">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="has-text-justified">
+                            <p style="text-align: center;">
+                                Text here.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="content">
+                            <div class="tab_container">
+                                <div id="juxtapose-embed1" data-startingposition="30%" data-animate="true" class="juxtapose">
+                                    <div class="jx-slider">
+                                        <div class="jx-handle " style="left: 54.53%;">
+                                            <div class="jx-arrow jx-left"></div>
+                                            <div class="jx-control">
+                                                <div class="jx-controller" tabindex="0" role="slider" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <div class="jx-arrow jx-right"></div>
+                                        </div>
+                                        <div class="jx-image jx-left " style="width: 54.53%;">
+                                            <img src="./image_assets/teaser/1-input.png" alt="" data-label="Raw">
+                                        </div>
+                                        <div class="jx-image jx-right " style="width: 45.47%;">
+                                            <img src="./image_assets/teaser/1-output.png" alt="" data-label="Grounded">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="has-text-justified">
+                            <p style="text-align: center;">
+                                Text here.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="section">
+
+        <!--/ Matting. -->
+        <div class="container is-max-desktop">
+
+            <h2 class="title is-3 has-text-centered">Model Architecture</h2>
+            <!-- color -->
+            <div class="columns is-centered">
+                <div class="column is-full-width">
+
+                    <div class="content has-text-justified">
+                        <h4>
+                            Text here.
+                        </h4>
+                    </div>
+
+                    <div class="content has-text-centered">
+                        <img src="./image_assets/gallery/short-caption.png" width="150%">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section" id="BibTeX">
+        <div class="container is-max-desktop content">
+            <h2 class="title"><a id="bibtex">BibTeX</a></h2>
+            <pre><code>@ TO BE UPDATED</code></pre>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="columns is-centered">
+            <div class="column is-8">
+                <div class="content">
+                    <p>
+                        This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>, adapted from <a href="https://github.com/nerfies/nerfies.github.io">this repo</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <script type="text/javascript">
+        var currentMethodList = ['ours', 'plain', 'full', 'aae', 'ip2p', 'p2p'];
+        var currentMethod = "ours";
+
+        function ChangeMethod(idx) {
+            var li_list = document.getElementById("method-view-ul").children;
+            for (i = 0; i < li_list.length; i++) {
+                li_list[i].className = "nav-link";
+            }
+            li_list[idx].className = "nav-link active";
+            currentMethod = currentMethodList[idx];
+
+            var image_livingroom = document.getElementById('image_livingroom');
+            var image_cityscape = document.getElementById('image_cityscape');
+            image_livingroom.src = "./image_assets/footnote/livingroom/livingroom_" + currentMethod + ".jpg";
+            image_cityscape.src = "./image_assets/footnote/cityscape/cityscape_" + currentMethod + ".jpg";
+        }
+
+        function ChangePrompt(idx) {
+            var li_list = document.getElementById("prompt-view-ul").children;
+            for (i = 0; i < li_list.length; i++) {
+                li_list[i].className = "nav-link";
+            }
+            li_list[idx].className = "nav-link active";
+            var div_livingroom = document.getElementById('div_livingroom');
+            var div_cityscape = document.getElementById('div_cityscape');
+            if (idx == 0) {
+                div_livingroom.style.display = "";
+                div_cityscape.style.display = "none";
+            } else {
+                div_livingroom.style.display = "none";
+                div_cityscape.style.display = "";
+            }
+        }
+    </script>
+
+    <script src="./assets/js/juxtapose.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script defer="" src="./assets/js/fontawesome.all.min.js"></script>
+    <script src="./assets/js/bulma-carousel.min.js"></script>
+    <script src="./assets/js/bulma-slider.min.js"></script>
+    <script src="./assets/js/magnifier.js"></script>
+
+</body>
+<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+
+</html>
