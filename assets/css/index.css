@@ -8,6 +8,12 @@ body {
   height: auto; /* Maintains aspect ratio */
 }
 
+.section-header-image {
+  vertical-align: top;
+  width: 32px;  /* Adjust as needed */
+  height: auto; /* Maintains aspect ratio */
+}
+
 .inline-image {
   vertical-align: top;
   width: 20px;  /* Adjust as needed */
