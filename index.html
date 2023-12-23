@@ -203,11 +203,14 @@
         <div class="hero-body">
             <div class="container is-max-desktop has-text-centered">
 
-                <h2 class="title is-3">Summary and Highlight</h2>
+                <h2 class="title is-3">Summary and Highlight (TL;DR)</h2>
 
                 <div class="has-text-justified">
                     <p>
-                        We present <b>GroundHog</b> <img src="image_assets/groundhog.png" alt="(logo)" class="inline-image">, a multimodal large language model developed by <u>ground</u>ing large language models to <u>ho</u>listic se<u>g</u>mentation.
+                        We present <b>GroundHog</b> <img src="image_assets/groundhog.png" alt="(logo)" class="inline-image">, 
+                        a multimodal large language model developed by <u>ground</u>ing large language models to <u>ho</u>listic se<u>g</u>mentation.
+                        <b>GroundHog</b> <img src="image_assets/groundhog.png" alt="(logo)" class="inline-image"> is developed by ...
+                        <b>GroundHog</b> <img src="image_assets/groundhog.png" alt="(logo)" class="inline-image"> has less hallucination, is diagnosable, and can plug in and play with any segmentation foundation model (e.g., SAM).
                     </p>
                 </div>
 
@@ -356,40 +359,40 @@
     </section>
 
 
-    <section class="section">
+    <section class="hero is-light is-small">
+        <div class="hero-body">
+            <div class="container is-max-desktop has-text-centered">
 
-        <!--/ Matting. -->
-        <div class="container is-max-desktop">
+                <h2 class="title is-3 has-text-centered"><b>M3G2</b>: Dataset for Visually Grounding Instruction Tuning</h2>
+                <!-- color -->
+                <div class="columns is-centered">
+                    <div class="column is-full-width">
 
-            <h2 class="title is-3 has-text-centered"><b>M3G2</b>: Dataset for Visually Grounding Instruction Tuning</h2>
-            <!-- color -->
-            <div class="columns is-centered">
-                <div class="column is-full-width">
+                        <div class="content has-text-justified">
+                            <h4>
+                                Task Schema
+                            </h4>
+                            Text here...
+                        </div>
 
-                    <div class="content has-text-justified">
-                        <h4>
-                            Task Schema
-                        </h4>
-                        Text here...
+                        <div class="content has-text-centered">
+                            <img src="./image_assets/dataset.png" width="150%">
+                        </div>
+
                     </div>
+                </div>
 
-                    <div class="content has-text-centered">
-                        <img src="./image_assets/dataset.png" width="150%">
+                <div class="column has-text-centered link-container" id="blocks">
+                    <div class="publication-links">
+                        <span class="link-block">
+                            <a href="./data.html#blocks" class="external-link button is-normal" style="width: 75%; color: #3273DC;">
+                            More Details
+                            </a>
+                        </span>
                     </div>
-
                 </div>
-            </div>
 
-            <div class="column has-text-centered link-container" id="blocks">
-                <div class="publication-links">
-                    <span class="link-block">
-                        <a href="./data.html#blocks" class="external-link button is-normal" style="width: 75%; color: #3273DC;">
-                        More Details
-                        </a>
-                    </span>
-                </div>
             </div>
-
         </div>
     </section>
 
@@ -400,7 +403,7 @@
         <div class="container is-max-desktop">
 
             <h2 class="title is-3 has-text-centered"><b>Results and Applications</b></h2>
-            <!-- color -->
+
             <div class="columns is-centered">
                 <div class="column is-full-width">
 
@@ -412,9 +415,72 @@
                     </div>
 
                     <div class="content has-text-centered">
-                        <img src="./image_assets/gallery/short-caption-1.png" width="150%">
+                        <img src="./image_assets/gallery/short-caption-1.png" width="100%">
                     </div>
 
+                </div>
+            </div>
+
+            <div class="columns is-centered">
+                <div class="column is-full-width">
+
+                    <div class="content has-text-justified">
+                        <h4>
+                            Grounded image captioning with detailed descriptions.
+                        </h4>
+                        Text here...
+                    </div>
+
+                    <div class="content has-text-centered">
+                        <img src="./image_assets/gallery/dense-caption-1.png" width="100%">
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="column is-full-width">
+
+                <div class="content has-text-justified">
+                    <h4>
+                        Pointer-guided region captioning.
+                    </h4>
+                </div>
+
+                <div class="columns is-centered">
+
+                    <div class="column">
+                        <div class="content">
+                            Text here...
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="content has-text-centered">
+                            <img src="./image_assets/gallery/region-caption-1.png" width="100%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column is-full-width">
+
+                <div class="content has-text-justified">
+                    <h4>
+                        Grounded visual question answering.
+                    </h4>
+                </div>
+
+                <div class="columns is-centered">
+
+                    <div class="column">
+                        <div class="content">
+                            Text here...
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="content has-text-centered">
+                            <img src="./image_assets/gallery/vqa-1.png" width="100%">
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -430,6 +496,74 @@
 
         </div>
     </section>
+
+
+    <section class="hero is-light is-small">
+        <div class="hero-body">
+            <div class="container is-max-desktop has-text-centered">
+
+                <h2 class="title is-3 has-text-centered">Less Hallucination, Diagnosability, and Plug-in-and-Play with SAM</h2>
+
+                <div class="columns is-centered">
+                    <div class="column is-full-width">
+
+                        <div class="content has-text-justified">
+                            <h4>
+                                Less Hallucination
+                            </h4>
+                            Text here...
+                        </div>
+                        
+                        <!--/
+                        <div class="content has-text-centered">
+                            <img src="./image_assets/dataset.png" width="150%">
+                        </div>
+                        -->
+
+                    </div>
+                </div>
+
+                <div class="columns is-centered">
+                    <div class="column is-full-width">
+
+                        <div class="content has-text-justified">
+                            <h4>
+                                Diagnosability
+                            </h4>
+                            Text here...
+                        </div>
+                        
+                        <!--/
+                        <div class="content has-text-centered">
+                            <img src="./image_assets/dataset.png" width="150%">
+                        </div>
+                        -->
+                        
+                    </div>
+                </div>
+
+                <div class="columns is-centered">
+                    <div class="column is-full-width">
+
+                        <div class="content has-text-justified">
+                            <h4>
+                                Plug-in-and-Play with any segmentation foundation model
+                            </h4>
+                            Text here...
+                        </div>
+                        
+                        <!--/
+                        <div class="content has-text-centered">
+                            <img src="./image_assets/dataset.png" width="150%">
+                        </div>
+                        -->
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 
     <section class="section" id="BibTeX">
