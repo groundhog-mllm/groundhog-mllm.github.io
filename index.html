@@ -209,8 +209,7 @@
                     <p>
                         We present <b>GroundHog</b> <img src="image_assets/groundhog.png" alt="(logo)" class="inline-image">, 
                         a multimodal large language model developed by <u>ground</u>ing large language models to <u>ho</u>listic se<u>g</u>mentation.
-                        <b>GroundHog</b> <img src="image_assets/groundhog.png" alt="(logo)" class="inline-image"> is developed by ...
-                        <b>GroundHog</b> <img src="image_assets/groundhog.png" alt="(logo)" class="inline-image"> has less hallucination, is diagnosable, and can plug in and play with any segmentation foundation model (e.g., SAM).
+                        <b>GroundHog</b> <img src="image_assets/groundhog.png" alt="(logo)" class="inline-image"> is flexible and diagnosable, reduces object hallucination, and can plug in and play with any segmentation foundation model (e.g., SAM).
                     </p>
                 </div>
 
@@ -243,7 +242,7 @@
                         </div>
                         <div class="has-text-justified">
                             <p style="text-align: center;">
-                                Text here.
+                                Text here
                             </p>
                         </div>
                     </div>
@@ -326,7 +325,13 @@
                         <h4>
                             Model Architecture
                         </h4>
-                        Text here...
+                        <b>GroundHog</b> <img src="image_assets/groundhog.png" alt="(logo)" class="inline-image"> 
+                        formulate the grounding process as an entity segment selection problem which involves 
+                        (1) proposing entity segmentation masks where the masks encapsulate regions with discernible semantic content, and 
+                        (2) recognizing the retrieved entities through the understanding of both visual and language context.
+                        <br>
+                        As default, our mask proposal model is an enhanced <a href="https://arxiv.org/abs/2112.01527">Mask2Former</a>
+                        with 50 additional queries each for segmenting parts and text regions, alongside the original 200 entity queries.
                     </div>
 
                     <div class="content has-text-centered">
@@ -343,7 +348,9 @@
 
                         <div class="column">
                             <div class="content">
-                                Text here...
+                                We introduce a pointer token &lt;PTR&gt; which refers to a specific point or region in the image input.
+                                &lt;PTR&gt; serves as a placeholder token to be replaced by the visual token from the mask proposal, which corresponds to the actual pointer input.
+                                For example, a user instruction can be formed as "What is that &lt;PTR&gt;?", with requests the model for a referring expression about a specific region.
                             </div>
                         </div>
                         <div class="column">
@@ -511,15 +518,20 @@
                             <h4>
                                 Less Hallucination
                             </h4>
-                            Text here...
                         </div>
-                        
-                        <!--/
-                        <div class="content has-text-centered">
-                            <img src="./image_assets/dataset.png" width="150%">
-                        </div>
-                        -->
 
+                        <div class="columns is-centered">
+                            <div class="column">
+                                <div class="content">
+                                    Text here...
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="content has-text-centered">
+                                    <img src="./image_assets/hallucinate.png" width="100%">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -530,14 +542,20 @@
                             <h4>
                                 Diagnosability
                             </h4>
-                            Text here...
                         </div>
                         
-                        <!--/
-                        <div class="content has-text-centered">
-                            <img src="./image_assets/dataset.png" width="150%">
+                        <div class="columns is-centered">
+                            <div class="column">
+                                <div class="content">
+                                    Text here...
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="content has-text-centered">
+                                    <img src="./image_assets/diagnose.png" width="100%">
+                                </div>
+                            </div>
                         </div>
-                        -->
                         
                     </div>
                 </div>
@@ -549,14 +567,20 @@
                             <h4>
                                 Plug-in-and-Play with any segmentation foundation model
                             </h4>
-                            Text here...
                         </div>
                         
-                        <!--/
-                        <div class="content has-text-centered">
-                            <img src="./image_assets/dataset.png" width="150%">
+                        <div class="columns is-centered">
+                            <div class="column">
+                                <div class="content">
+                                    Text here...
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="content has-text-centered">
+                                    <img src="./image_assets/sam.png" width="100%">
+                                </div>
+                            </div>
                         </div>
-                        -->
                         
                     </div>
                 </div>
