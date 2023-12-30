@@ -325,12 +325,16 @@
                         <h4>
                             Model Architecture
                         </h4>
-                        <b>GroundHog</b> <img src="image_assets/groundhog.png" alt="(logo)" class="inline-image"> 
+                        <b>Key Idea:</b> GroundHog <img src="image_assets/groundhog.png" alt="(logo)" class="inline-image"> 
                         formulate the grounding process as an entity segment selection problem which involves 
                         (1) proposing entity segmentation masks where the masks encapsulate regions with discernible semantic content, and 
                         (2) recognizing the retrieved entities through the understanding of both visual and language context.
                         <br>
-                        As default, our mask proposal model is an enhanced <a href="https://arxiv.org/abs/2112.01527">Mask2Former</a>
+                        <b>Details:</b> GroundHog <img src="image_assets/groundhog.png" alt="(logo)" class="inline-image"> 
+                        incorporates a masked feature extractor that takes an input image and a set of class-agnostic entity mask proposals, 
+                        and converts each mask's features into visual entity tokens for an MLLM backbone. 
+                        This MLLM then connects groundable phrases to unified grounding masks by retrieving and merging the entity masks.
+                        To enable holistic entity mask proposals, our default mask proposal model is an enhanced <a href="https://arxiv.org/abs/2112.01527">Mask2Former</a>
                         with 50 additional queries each for segmenting parts and text regions, alongside the original 200 entity queries.
                     </div>
 
@@ -376,10 +380,9 @@
                     <div class="column is-full-width">
 
                         <div class="content has-text-justified">
-                            <h4>
-                                Task Schema
-                            </h4>
-                            Text here...
+                            We introduce the <b>M3G2</b> dataset for <u>M</u>ulti-<u>M</u>odal <u>M</u>ulti-<u>G</u>rained <u>G</u>rounding. 
+                            M3G2 is a comprehensive dataset consisting of 36 sub-problems, derived and augmented from 27 existing datasets with grounded vision-language annotations. 
+                            The dataset is categorized into four main types: (1) Grounded Image Captioning (GCAP), (2) Referential Expression Segmentation (RES), (3) Grounded Visual Question Answering (GVQA), and (4) Referential Dialogue (RD).
                         </div>
 
                         <div class="content has-text-centered">
@@ -416,26 +419,20 @@
 
                     <div class="content has-text-justified">
                         <h4>
-                            Grounded image captioning with short descriptions.
-                        </h4>
-                        Text here...
+                            Grounded image captioning.
+                        </h4>                        
+                    </div>
+
+                    <div class="content has-text-justified">
+                        Grounded image captioning with short descriptions.
                     </div>
 
                     <div class="content has-text-centered">
                         <img src="./image_assets/gallery/short-caption-1.png" width="100%">
                     </div>
 
-                </div>
-            </div>
-
-            <div class="columns is-centered">
-                <div class="column is-full-width">
-
                     <div class="content has-text-justified">
-                        <h4>
-                            Grounded image captioning with detailed descriptions.
-                        </h4>
-                        Text here...
+                        Grounded image captioning with detailed descriptions.
                     </div>
 
                     <div class="content has-text-centered">
@@ -449,7 +446,26 @@
 
                 <div class="content has-text-justified">
                     <h4>
-                        Pointer-guided region captioning.
+                        Referential expression segmentation.
+                    </h4>
+                    Text here...
+                </div>
+
+                <div class="columns is-centered">
+                    <div class="column is-full-width">
+                        <div class="content has-text-centered">
+                            <img src="./image_assets/gallery/res-1.png" width="150%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="column is-full-width">
+
+                <div class="content has-text-justified">
+                    <h4>
+                        Referential dialogue.
                     </h4>
                 </div>
 
@@ -462,7 +478,7 @@
                     </div>
                     <div class="column">
                         <div class="content has-text-centered">
-                            <img src="./image_assets/gallery/region-caption-1.png" width="100%">
+                            <img src="./image_assets/gallery/rd-1.png" width="100%">
                         </div>
                     </div>
                 </div>
