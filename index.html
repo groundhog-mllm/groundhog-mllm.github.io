@@ -5,7 +5,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
   <!-- HTML Meta Tags -->
-  <title>GroundHog</title>
+  <title>GROUNDHOG</title>
   <meta name="description" content="GROUNDHOG: Grounding Large Language Models to Holistic Segmentation">
   <link rel="icon" href="image_assets/groundhog.png" type="image/x-icon">
   <link rel="shortcut icon" href="image_assets/groundhog.png" type="image/x-icon">
@@ -70,7 +70,7 @@
             <div class="container is-max-desktop">
                 <div class="columns is-centered">
                     <div class="column has-text-centered">
-                        <h1 class="title is-1 publication-title">GroundHog <img src="image_assets/groundhog.png" alt="(logo)" class="title-image">: Grounding Large Language Models to Holistic Segmentation</h1>
+                        <h1 class="title is-1 publication-title">GROUNDHOG <img src="image_assets/groundhog.png" alt="(logo)" class="title-image">: Grounding Large Language Models to Holistic Segmentation</h1>
                         <div class="column has-text-centered">
 
                             <div class="is-size-5 publication-authors">
@@ -91,19 +91,17 @@
                             </div>
 
                             <div class="is-size-5 publication-authors">
+
                                 <p>
                                     <span class="author-block">
                                     <sup>1</sup>University of Michigan&nbsp</span> 
                                     <span class="author-block">
                                     <sup>2</sup>Amazon AGI&nbsp</span>
-
                                 </p>
 
-                                <!-- 
-                                <p id="fn1" style="font-size: medium;">Work done during internship at Amazon AGI.
-                                    <a href="#ref2"></a>
+                                <p id="fn1" style="font-size: large;">
+                                    CVPR 2024
                                 </p>
-                                -->
 
                             </div>
 
@@ -207,9 +205,9 @@
 
                 <div class="has-text-justified">
                     <p>
-                        We present <b>GroundHog</b> <img src="image_assets/groundhog.png" alt="(logo)" class="inline-image">, 
+                        We present <b>GROUNDHOG</b> <img src="image_assets/groundhog.png" alt="(logo)" class="inline-image">, 
                         a multimodal large language model developed by <u>ground</u>ing large language models to <u>ho</u>listic se<u>g</u>mentation.
-                        <b>GroundHog</b> <img src="image_assets/groundhog.png" alt="(logo)" class="inline-image"> is flexible and diagnosable, reduces object hallucination, and can plug in and play with any segmentation foundation model (e.g., SAM).
+                        <b>GROUNDHOG</b> <img src="image_assets/groundhog.png" alt="(logo)" class="inline-image"> is flexible and diagnosable, reduces object hallucination, and can plug in and play with any segmentation foundation model (e.g., SAM).
                     </p>
                 </div>
 
@@ -318,7 +316,7 @@
         <!--/ Matting. -->
         <div class="container is-max-desktop">
 
-            <h2 class="title is-3 has-text-centered"><b>GroundHog</b> <img src="image_assets/groundhog.png" alt="(logo)" class="section-header-image">: Grounding LLMs to Holistic Segmentation</h2>
+            <h2 class="title is-3 has-text-centered"><b>GROUNDHOG</b> <img src="image_assets/groundhog.png" alt="(logo)" class="section-header-image">: Grounding LLMs to Holistic Segmentation</h2>
             <!-- color -->
             <div class="columns is-centered">
                 <div class="column is-full-width">
@@ -327,12 +325,12 @@
                         <h4>
                             Model Architecture
                         </h4>
-                        <b>Key Idea:</b> GroundHog <img src="image_assets/groundhog.png" alt="(logo)" class="inline-image"> 
+                        <b>Key Idea:</b> GROUNDHOG <img src="image_assets/groundhog.png" alt="(logo)" class="inline-image"> 
                         formulate the grounding process as an entity segment selection problem which involves 
                         (1) proposing entity segmentation masks where the masks encapsulate regions with discernible semantic content, and 
                         (2) recognizing the retrieved entities through the understanding of both visual and language context.
                         <br>
-                        <b>Details:</b> GroundHog <img src="image_assets/groundhog.png" alt="(logo)" class="inline-image"> 
+                        <b>Details:</b> GROUNDHOG <img src="image_assets/groundhog.png" alt="(logo)" class="inline-image"> 
                         incorporates a masked feature extractor that takes an input image and a set of class-agnostic entity mask proposals, 
                         and converts each mask's features into visual entity tokens for an MLLM backbone. 
                         This MLLM then connects groundable phrases to unified grounding masks by retrieving and merging the entity masks.
@@ -531,9 +529,10 @@
                                     https://arxiv.org/abs/2305.10355">POPE</a> benchmark, which includes binary questions about object existence.
                                 </div>
                                 <div class="content">
-                                    GroundHog outperforms other models in accuracy across all splits. 
-                                    Remarkably, GroundHog scores a noticeably higher recall than prior models, especially excluding those that uniformly answer "yes", indicating a high likelihood of correct object identification when recognition is claimed.
-                                    This is a desired property, supporting our aim to develop a more accountable and trustworthy MLLM with better grounding and less hallucination.
+                                    Thanks to the varied task distribution and the inclusion of negative question-answering samples in M3G2 dataset, GROUNDHOG reduces object hallucination. 
+                                    Remarkably, GROUNDHOG consistently outperforms other models in both accuracy and F1 score across all splits, particularly on the more challenging ones. 
+                                    It shows an absolute improvement of 5.2% in accuracy for Popular and 4.0% for Adversarial over the previously best-performing model. 
+                                    This suggests that our model's enhanced grounding capability plays a significant role in mitigating the object hallucination problem.
                                 </div>
                             </div>
                             <div class="column">
@@ -557,7 +556,7 @@
                         <div class="columns is-centered">
                             <div class="column">
                                 <div class="content">
-                                    GroundHog enables diagnosability through the decoupled design of entity proposal and selection.
+                                    GROUNDHOG enables diagnosability through the decoupled design of entity proposal and selection.
                                     This is exemplified in the case on the left, which illustrates the mask proposal scoring and selective merging process of our model. 
                                     We show the top-4 masks, where the higher-score masks are labeled in green while the lower-score masks are labeled in red. 
                                     Users can easily interpret that the failure is due to the incapability of MLLM to recognize the word "KWIK", despite it being successfully localized and proposed as an entity candidate.
@@ -585,7 +584,7 @@
                         <div class="columns is-centered">
                             <div class="column">
                                 <div class="content">
-                                    GroundHog supports plug-in-and-play with any segmentation foundation model, e.g., SAM, as the model conditions the entity features solely on the binary masks without using any embeddings from the mask proposal model. 
+                                    GROUNDHOG supports plug-in-and-play with any segmentation foundation model, e.g., SAM, as the model conditions the entity features solely on the binary masks without using any embeddings from the mask proposal model. 
                                     For the pointer-to-mask conversion, we show the best-matched mask proposal from our Mask2Former+ model in comparison to the mask from SAM. 
                                     The SAM-generated mask offers a more precise representation of the specified region, leading to a more accurate caption. 
                                 </div>
@@ -608,7 +607,15 @@
     <section class="section" id="BibTeX">
         <div class="container is-max-desktop content">
             <h2 class="title"><a id="bibtex">BibTeX</a></h2>
-            <pre><code>@ TO BE UPDATED</code></pre>
+            <pre><code>
+@inproceedings{zhang2024groundhog,
+    title={GROUNDHOG: Grounding Large Language Models to Holistic Segmentation},
+    author={Zhang, Yichi and Ma, Ziqiao and Gao, Xiaofeng and Shakiah, Suhaila and Gao, Qiaozi and Chai, Joyce},
+    booktitle={Conference on Computer Vision and Pattern Recognition 2024},
+    year={2024},
+    url={https://openreview.net/forum?id=PWVW3ux1Ju}
+}
+            </code></pre>
         </div>
     </section>
 
